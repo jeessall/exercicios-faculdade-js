@@ -10,7 +10,7 @@ campo1.addEventListener("keyup", calcular);
 campo2.addEventListener("keyup", calcular);
 
 function calcular() {
-
+//resolvendo problema de Nan(not a number) quando os campos estão vazio, adicionando uma mensagem de erro e removendo depois de uns segundos
    if(campo1.value === '' || campo2.value === ''){
     resposta.classList.add("problema");
     resposta.innerHTML="Campo Vazio";
